@@ -5,10 +5,10 @@ import {
 
 import './FilterItem.css';
 
-const FilterItem = ({ label, value }) => {
+const FilterItem = ({ label, value, changed }) => {
     return (
         <div className='custom-checkbox-wrap'>
-            <Form.Check type="checkbox" label={label} custom value={value} />
+            <Form.Check type="checkbox" label={label} custom value={value} onChange={changed} />
         </div>
     );
 };

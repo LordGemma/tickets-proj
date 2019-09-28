@@ -5,8 +5,9 @@ import {
     Col,
 } from 'react-bootstrap';
 
-import { Header } from './Header';
+import Header from './Header';
 import SideBar from './SideBar';
+import TicketsList from './Tickets';
 
 const Layout = () => {
     return (
@@ -16,7 +17,9 @@ const Layout = () => {
                 <Col>
                     <SideBar />
                 </Col>
-                <Col xs={9}>Main</Col>
+                <Col xs={9}>
+                    <TicketsList />
+                </Col>
             </Row>
         </Container>
     );

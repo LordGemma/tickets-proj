@@ -1,9 +1,19 @@
 .custom-checkbox-wrap .custom-control {
-    padding-left: 45px;
+    padding-left: 33px;
+    display: flex;
+    align-items: center;
 }
 
 .custom-checkbox-wrap .custom-control-label::before {
     left: -2rem;
+    cursor: pointer;
+    top: 0;
+}
+
+.custom-checkbox-wrap .custom-control-label::after {
+    left: -2rem;
+    cursor: pointer;
+    top: 0;
 }
 
 .custom-checkbox-wrap .custom-control label {

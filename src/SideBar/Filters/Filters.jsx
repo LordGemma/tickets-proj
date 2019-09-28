@@ -12,7 +12,7 @@ const Filters = () => {
         },
         {
             label: 'Без пересадок',
-            value: null
+            value: 0
         },
         {
             label: '1 пересадка',
@@ -32,8 +32,8 @@ const Filters = () => {
         <Form>
             {
                 labels.map(item => (
-                    <Form.Group controlId={`filter-${item.value}`}>
-                        <FilterItem label={item.label} value={item.value} />
+                    <Form.Group key={`filter-${item.value}`} controlId={`filter-${item.value}`}>
+                        <FilterItem label={item.label} value={item.value} changed={(e) => console.log(e.target.value)} />
                     </Form.Group>
                 ))
             }
