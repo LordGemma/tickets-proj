@@ -1,0 +1,21 @@
+.sorting .btn-group.btn-group-toggle {
+    width: 100%;
+}
+
+.sorting .btn-group.btn-group-toggle label {
+    background-color: #fff;
+    color: #4A4A4A;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    padding: 15px 56px;
+    border: 1px solid #DFE5EC;
+}
+
+.sorting .btn-group.btn-group-toggle label.active {
+    background-color: #2196F3;
+    border-color: #2196F3;
+}
