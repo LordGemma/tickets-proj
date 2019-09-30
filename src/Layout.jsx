@@ -16,7 +16,7 @@ const Layout = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    const tickets = async () => dispatch(await getAllTickets());
+    const tickets = () => dispatch(getAllTickets());
     tickets();
   }, []);
 

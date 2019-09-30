@@ -1,5 +1,4 @@
 import {
-  setTicketList,
   sortTicketsByDuration,
   sortTicketsByPrice,
 } from './actionCreators';

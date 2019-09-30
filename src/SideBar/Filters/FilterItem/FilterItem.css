@@ -1,7 +1,23 @@
+.custom-checkbox-wrap {
+    transition: all 0.3s ease;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.custom-checkbox-wrap:hover {
+    background-color: #F1FCFF;
+}
+
 .custom-checkbox-wrap .custom-control {
     padding-left: 33px;
     display: flex;
     align-items: center;
+}
+
+.custom-checkbox-wrap .custom-control label {
+    font-size: 13px;
+    line-height: 20px;
+    cursor: pointer;
 }
 
 .custom-checkbox-wrap .custom-control-label::before {
@@ -14,11 +30,6 @@
     left: -2rem;
     cursor: pointer;
     top: 0;
-}
-
-.custom-checkbox-wrap .custom-control label {
-    font-size: 13px;
-    line-height: 20px;
 }
 
 .custom-checkbox-wrap .custom-checkbox .custom-control-label::before {
@@ -35,7 +46,7 @@
 }
 
 .custom-checkbox-wrap .custom-checkbox .custom-control-input:checked~.custom-control-label::after {
-    background-image: none;
+    background-image: url('/public/Shape.png');
     width: 20px;
     height: 20px;
 }

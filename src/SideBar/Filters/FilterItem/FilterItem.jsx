@@ -1,14 +1,26 @@
 import React from 'react';
-import { 
+import {
     Form,
 } from 'react-bootstrap';
 
 import './FilterItem.css';
 
-const FilterItem = ({ label, value, changed }) => {
+const FilterItem = ({
+    label,
+    value,
+    changed,
+    isChecked
+}) => {
     return (
         <div className='custom-checkbox-wrap'>
-            <Form.Check type="checkbox" label={label} custom value={value} onChange={changed} />
+            <Form.Check
+                type="checkbox"
+                label={label}
+                custom
+                value={value}
+                checked={isChecked}
+                onChange={changed}
+            />
         </div>
     );
 };

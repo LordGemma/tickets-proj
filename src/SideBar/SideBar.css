@@ -2,7 +2,7 @@
     background: #FFFFFF;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    padding: 20px;
+    padding: 10px 0;
 }
 
 .sidebar-header h4 {
@@ -12,5 +12,11 @@
     display: flex;
     align-items: flex-end;
     letter-spacing: 0.5px;
+    padding: 10px 20px;
+    margin: 0;
     text-transform: uppercase;
+}
+
+.sidebar .filters .form-group {
+    margin-bottom: 0;
 }
