@@ -1,5 +1,6 @@
-body {
-  font-family: Open Sans;
+html body {
+  font-family: Open Sans, Arial, sans-serif;
+  font-style: normal;
   color: #4A4A4A;
   background-color: #F3F7FA;
   padding-bottom: 50px;

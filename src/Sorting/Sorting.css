@@ -13,6 +13,7 @@
     text-transform: uppercase;
     padding: 15px 56px;
     border: 1px solid #DFE5EC;
+    cursor: pointer;
 }
 
 .sorting .btn-group.btn-group-toggle label.active {
