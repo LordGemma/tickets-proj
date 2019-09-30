@@ -22,6 +22,8 @@ const Filters = () => {
     chengedFilters[index].checked = e.target.checked;
     if (e.target.value === 'all' && e.target.checked) {
       chengedFilters.forEach((el) => { el.checked = true });
+    } else if (e.target.value === 'all' && !e.target.checked) {
+      chengedFilters.forEach((el) => { el.checked = false });
     }
     dispatch(filterTickets(chengedFilters));
   }

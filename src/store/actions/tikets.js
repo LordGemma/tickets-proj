@@ -10,7 +10,6 @@ import api from '../../services/api';
 export const sortByPrice = (tickets) => (dispatch) => {
   const sortedList = tickets.sort((a, b) => a.price - b.price);
   dispatch(setTicketList(sortedList));
-  dispatch(setInitialList(sortedList));
   dispatch(sortTicketsByPrice());
 };
 
@@ -21,7 +20,6 @@ export const sortByDuration = (tickets) => (dispatch) => {
     return firstItem - secondItem;
   });
   dispatch(setTicketList(sortedList));
-  dispatch(setInitialList(sortedList));
   dispatch(sortTicketsByDuration());
 };
 
@@ -29,5 +27,6 @@ export const getAllTickets = () => async (dispatch) => {
   const tickets = await api.getTickets();
   if (tickets) {
     dispatch(sortByPrice(tickets));
+    dispatch(setInitialList(tickets));
   } else { dispatch(setTicketList([])); }
 };

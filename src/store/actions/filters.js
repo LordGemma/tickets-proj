@@ -1,4 +1,5 @@
 import { filterTicketsByTransfer, setTicketList } from "./actionCreators";
+import { sortByDuration, sortByPrice } from './tikets';
 
 export function filterStops(array, filterBy) {
   return array.filter(ticket => {
@@ -8,11 +9,12 @@ export function filterStops(array, filterBy) {
 }
 
 export const filterTickets = stops => (dispatch, getState) => {
-  const tickets = getState().tickets.initialList;
+  const { sortBy, initialList } = getState().tickets;
   const filters = [...stops];
   filters.shift();
   const activeFilters = filters.filter((stop) => stop.checked);
-  const filteredList = activeFilters.map((filter) => filterStops(tickets, filter.value)).flat(2);
+  const filteredList = activeFilters.map((filter) => filterStops(initialList, filter.value)).flat(2);
+  if (sortBy === 'price') dispatch(sortByPrice(filteredList));
+  else dispatch(sortByDuration(filteredList));
   dispatch(filterTicketsByTransfer(stops));
-  dispatch(setTicketList(filteredList));
 };
