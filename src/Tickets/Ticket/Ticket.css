@@ -6,6 +6,10 @@
     margin-top: 20px;
 }
 
+.ticket .jumbotron {
+    margin-bottom: 0;
+}
+
 .ticket .ticket-price {
     font-weight: 600;
     font-size: 24px;

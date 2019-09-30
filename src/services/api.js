@@ -14,7 +14,7 @@ export default {
       );
       return result.data.searchId;
     } catch (e) {
-      console.log(e);
+      console.log(e.message);
     }
   },
 
@@ -26,7 +26,7 @@ export default {
       );
       return ticketsList.data.tickets;
     } catch (e) {
-      console.log(e);
+      console.log(e.message);
     }
   },
 };
