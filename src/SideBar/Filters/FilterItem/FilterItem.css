@@ -46,7 +46,7 @@
 }
 
 .custom-checkbox-wrap .custom-checkbox .custom-control-input:checked~.custom-control-label::after {
-    background-image: url('/public/Shape.png');
+    background-image: url('../Shape.svg');
     width: 20px;
     height: 20px;
 }
